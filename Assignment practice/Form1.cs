@@ -76,7 +76,16 @@ namespace Assignment_practice
 
                 Radius = Convert.ToDouble(RadiusBox.Text);
 
-                Area = 
+                Area = Radius * Radius;
+
+                Area2 = Math.PI * Area;
+
+                AreaOut3.Text = "Area =" + Area2;
+          
+            }
+            catch
+            {
+                MessageBox.Show("Type in Two Numbers!");
             }
         }
     }
