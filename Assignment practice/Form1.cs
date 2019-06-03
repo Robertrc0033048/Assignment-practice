@@ -16,5 +16,19 @@ namespace Assignment_practice
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double Width, Height, Area;
+
+            Width = Convert.ToDouble(WidthBox.Text);
+
+            Height = Convert.ToDouble(HeightBox.Text);
+
+            Area = Width * Height;
+
+            AreaOut.Text = "Area = " + Area;
+
+        }
     }
 }
